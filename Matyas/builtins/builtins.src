@@ -1,0 +1,111 @@
+.IPPcode18
+
+JUMP program_end
+
+LABEL length
+CREATEFRAME
+DEFVAR TF@result
+DEFVAR TF@src_string
+PUSHFRAME
+POPS LF@src_string
+STRLEN LF@result LF@src_string
+PUSHS LF@result
+POPFRAME
+RETURN
+
+LABEL substr
+CREATEFRAME
+PUSHFRAME
+DEFVAR LF@stackHelper
+
+DEFVAR LF@sourceString
+DEFVAR LF@substrStart
+DEFVAR LF@substrLen
+POPS LF@substrLen
+POPS LF@substrStart
+POPS LF@sourceString
+
+DEFVAR LF@endIndex
+
+DEFVAR LF@substring
+MOVE LF@substring string@
+DEFVAR LF@length
+STRLEN LF@length LF@sourceString
+
+JUMPIFEQ %%substrInvalid LF@sourceString string@
+
+LT LF@stackHelper LF@substrStart int@1
+JUMPIFEQ %%substrInvalid LF@stackHelper bool@true
+
+DEFVAR LF@stackHelper2
+LT LF@stackHelper2 LF@substrLen int@0
+SUB LF@stackHelper LF@length LF@substrStart
+GT LF@stackHelper LF@substrLen LF@stackHelper
+OR LF@stackHelper LF@stackHelper LF@stackHelper2
+JUMPIFNEQ %%substrLengthValid LF@stackHelper bool@true
+
+PUSHS LF@length
+POPS LF@endIndex
+JUMP %%substrAfterClamping
+
+LABEL %%substrLengthValid
+MOVE LF@endIndex LF@substrStart
+ADD LF@endIndex LF@endIndex LF@substrLen
+SUB LF@endIndex LF@endIndex int@1
+LABEL %%substrAfterClamping
+
+DEFVAR LF@char
+DEFVAR LF@index
+MOVE LF@index LF@substrStart
+SUB LF@index LF@index int@1
+
+LABEL %%substrLoopStart
+GETCHAR LF@char LF@sourceString LF@index
+CONCAT LF@substring LF@substring LF@char
+ADD LF@index LF@index int@1
+JUMPIFNEQ %%substrLoopStart LF@index LF@endIndex
+
+LABEL %%substrInvalid
+
+PUSHS LF@substring
+POPFRAME
+RETURN
+
+
+
+LABEL asc
+CREATEFRAME
+PUSHFRAME
+DEFVAR LF@stackHelper
+
+DEFVAR LF@str
+DEFVAR LF@index
+DEFVAR LF@strlen
+
+DEFVAR LF@result
+MOVE LF@result int@0
+
+POPS LF@index
+SUB LF@index LF@index int@1
+POPS LF@str
+
+STRLEN LF@strlen LF@str
+
+LT LF@stackHelper LF@index int@0
+
+DEFVAR LF@stackHelper2
+PUSHS LF@index
+SUB LF@strlen LF@strlen int@1
+GT LF@stackHelper2 LF@index LF@strlen
+OR LF@stackHelper LF@stackHelper LF@stackHelper2
+
+JUMPIFEQ %%asc_end LF@stackHelper LF@stackHelper2
+STRI2INT LF@result LF@str LF@index
+
+LABEL %%asc_end
+PUSHS LF@result
+
+POPFRAME
+RETURN
+
+LABEL program_end

@@ -1,0 +1,26 @@
+.IPPcode18
+
+CREATEFRAME
+PUSHFRAME
+DEFVAR LF@counter
+DEFVAR GF@counter
+CREATEFRAME
+DEFVAR TF@counter
+
+MOVE GF@counter int@1
+MOVE LF@counter int@1
+
+DEFVAR TF@TF
+LABEL while
+ADD TF@counter GF@counter LF@counter
+MOVE GF@counter LF@counter
+MOVE LF@counter TF@counter
+# DEFVAR TF@TF # I could define it here as well, check the "phorum" :D
+GT TF@TF TF@counter int@100
+JUMPIFEQ end bool@true TF@TF
+
+WRITE TF@counter
+WRITE string@\010
+
+JUMP while
+LABEL end

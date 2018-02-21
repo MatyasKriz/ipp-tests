@@ -1,0 +1,97 @@
+.IpPcoDE18
+#.IPPCODE18
+ # .iprakoud2k18
+  # llaming to the future -->
+
+CREATEFRAME
+DEFVAR GF@CONTRARERO
+MOVE GF@CONTRARERO int@0
+LABEL lol
+JUMPIFEQ lolend GF@CONTRARERO int@20
+CREATEFRAME
+CREATEFRAME
+CREATEFRAME
+CREATEFRAME
+CREATEFRAME
+ADD GF@CONTRARERO GF@CONTRARERO int@1
+JUMP lol
+LABEL lolend
+DEFVAR GF@LLAMA_ONE
+MOVE GF@LLAMA_ONE string@ONE_ONE_ONE_ONE_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_#_ONE
+DEFVAR TF@l0k0m0t1v
+MOVE TF@l0k0m0t1v int@1000000000
+CREATEFRAME
+DEFVAR TF@l0k0m0t1v
+MOVE TF@l0k0m0t1v int@9
+MUL TF@l0k0m0t1v TF@l0k0m0t1v int@2
+PUSHFRAME
+CREATEFRAME
+DEFVAR TF@l0k0m0t1v
+MOVE TF@l0k0m0t1v int@1000
+ADD TF@l0k0m0t1v TF@l0k0m0t1v TF@l0k0m0t1v
+ADD TF@l0k0m0t1v TF@l0k0m0t1v LF@l0k0m0t1v
+JUMPIFEQ gut TF@l0k0m0t1v int@2018
+WRITE string@someone_has_done_fucked_up # I will not fkin write \032 for every space, this lang
+#uage sarsuckosi
+#LABEL gut
+
+LABEL gut
+
+POPFRAME
+JUMPIFEQ guten TF@l0k0m0t1v int@18
+WRITE string@someone_has_done_fucked_up2_the_sequel
+LABEL guten
+
+CREATEFRAME
+DEFVAR TF@ipp-ifj-whats-the-difference
+MOVE TF@ipp-ifj-whats-the-difference string@there_is_none
+PUSHFRAME
+CREATEFRAME
+DEFVAR TF@ipp-ifj-whats-the-difference
+MOVE TF@ipp-ifj-whats-the-difference string@there_is_one
+PUSHFRAME
+CREATEFRAME
+DEFVAR TF@ipp-ifj-whats-the-difference
+MOVE TF@ipp-ifj-whats-the-difference string@there_is_two
+PUSHFRAME
+CREATEFRAME
+DEFVAR TF@ipp-ifj-whats-the-difference
+MOVE TF@ipp-ifj-whats-the-difference string@there_is_three
+PUSHFRAME
+
+POPFRAME
+WRITE TF@ipp-ifj-whats-the-difference
+WRITE string@\010
+POPFRAME
+WRITE TF@ipp-ifj-whats-the-difference
+WRITE string@\010
+POPFRAME
+WRITE TF@ipp-ifj-whats-the-difference
+WRITE string@\010
+POPFRAME
+WRITE TF@ipp-ifj-whats-the-difference
+
+WRITE string@\010\010
+CREATEFRAME
+DEFVAR TF@lamko1
+PUSHFRAME
+MOVE LF@lamko1 int@1
+CREATEFRAME
+DEFVAR TF@lamko2
+PUSHFRAME
+MOVE LF@lamko2 int@10
+CREATEFRAME
+DEFVAR TF@lamko3
+PUSHFRAME
+MOVE LF@lamko3 int@100
+CREATEFRAME
+DEFVAR TF@lamko4
+PUSHFRAME
+MOVE LF@lamko4 int@1000
+CREATEFRAME
+DEFVAR TF@lamko5
+PUSHFRAME
+MOVE LF@lamko5 int@10000
+
+WRITE string@TOP_OF_THE_WORLD!
+
