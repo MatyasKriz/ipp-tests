@@ -1,0 +1,96 @@
+.ippcode18
+
+JUMP program_start
+
+LABEL getNumber
+    CREATEFRAME
+    PUSHFRAME
+    DEFVAR LF@index
+    POPS LF@index
+    DEFVAR LF@number
+    MOVE LF@number int@0
+
+    DEFVAR LF@chr
+    LABEL getNumber%while
+    STRI2INT LF@chr GF@string LF@index
+    JUMPIFEQ getNumber%while_end int@44 LF@chr
+    JUMPIFEQ getNumber%while_end int@93 LF@chr
+
+    SUB LF@chr LF@chr int@48 # das is die magic ascii number of '0'
+    MUL LF@number LF@number int@10
+    ADD LF@number LF@number LF@chr
+
+    ADD LF@index LF@index int@1
+    JUMP getNumber%while
+    LABEL getNumber%while_end
+
+    PUSHS LF@index
+    PUSHS LF@number
+    POPFRAME
+RETURN
+
+# returns the sum of array in string (e.g. string@120,10,30,12) on the stack
+LABEL arraySum
+    CREATEFRAME
+    PUSHFRAME
+    DEFVAR LF@index
+    MOVE LF@index int@1
+    DEFVAR LF@sum
+    MOVE LF@sum int@0
+
+    DEFVAR LF@indexNew
+    DEFVAR LF@number
+    MOVE LF@number int@0
+    LABEL arraySum%while
+    JUMPIFEQ arraySum%while_end GF@strlen LF@index
+    PUSHS LF@index
+    CALL getNumber
+    POPS LF@number
+    POPS LF@indexNew
+    MOVE LF@index LF@indexNew
+
+    ADD LF@sum LF@sum LF@number
+
+    ADD LF@index LF@index int@1
+    JUMP arraySum%while
+    LABEL arraySum%while_end
+
+    PUSHS LF@sum
+    POPFRAME
+RETURN
+
+
+LABEL program_start
+
+DEFVAR GF@string
+MOVE GF@string string@[
+
+DEFVAR GF@first
+MOVE GF@first bool@true
+DEFVAR GF@input
+LABEL while
+READ GF@input string
+JUMPIFEQ while_end string@ GF@input
+JUMPIFEQ first bool@true GF@first
+CONCAT GF@string GF@string string@,
+LABEL first
+MOVE GF@first bool@false
+CONCAT GF@string GF@string GF@input
+JUMP while
+LABEL while_end
+
+CONCAT GF@string GF@string string@]
+WRITE string@Sum\032of\032
+WRITE GF@string
+WRITE string@\032is\032
+
+DEFVAR GF@strlen
+STRLEN GF@strlen GF@string
+
+CALL arraySum
+
+CREATEFRAME
+DEFVAR TF@result
+POPS TF@result
+WRITE TF@result
+WRITE string@.

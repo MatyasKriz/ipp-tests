@@ -1,0 +1,43 @@
+.ippcode18
+CREATEFRAME
+PUSHFRAME
+CREATEFRAME
+DEFVAR GF@l
+DEFVAR LF@l
+DEFVAR TF@l
+MOVE GF@l string@
+MOVE LF@l int@-00000000
+MOVE TF@l bool@true
+
+JUMPIFEQ someone_don_fook_up bool@false TF@l
+
+DEFVAR GF@typko
+TYPE GF@typko GF@l
+JUMPIFNEQ someone_don_fook_up string@string GF@typko
+READ GF@l string
+JUMPIFNEQ someone_don_fook_up string@ GF@l
+
+TYPE GF@typko LF@l
+JUMPIFNEQ someone_don_fook_up string@int GF@typko
+READ LF@l int
+JUMPIFNEQ someone_don_fook_up int@0 LF@l
+
+TYPE GF@typko TF@l
+JUMPIFNEQ someone_don_fook_up string@bool GF@typko
+READ TF@l bool
+JUMPIFNEQ someone_don_fook_up bool@false TF@l
+
+READ GF@l string
+JUMPIFNEQ someone_don_fook_up string@false GF@l
+
+READ LF@l int
+JUMPIFNEQ someone_don_fook_up int@43 LF@l
+
+READ TF@l bool
+JUMPIFNEQ someone_don_fook_up bool@true TF@l
+
+JUMP ender_world
+LABEL someone_don_fook_up
+WRITE string@stringano_errorino_p
+LABEL ender_world
+WRITE string@WinnerWinnerChickenDinner!
