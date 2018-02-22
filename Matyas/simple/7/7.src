@@ -1,0 +1,44 @@
+.ippcode18
+
+JUMP program_start
+
+LABEL factorial
+CREATEFRAME
+PUSHFRAME
+DEFVAR LF@bool
+DEFVAR LF@result
+POPS LF@result
+LT LF@bool LF@result int@2
+JUMPIFEQ factorial%one bool@true LF@bool
+
+DEFVAR LF@callResult
+MOVE LF@callResult LF@result
+SUB LF@callResult LF@callResult int@1
+PUSHS LF@callResult
+CALL factorial
+POPS LF@callResult
+MUL LF@result LF@result LF@callResult
+
+JUMP factorial%end
+LABEL factorial%one
+MOVE LF@result int@1
+LABEL factorial%end
+PUSHS LF@result
+POPFRAME
+RETURN
+
+LABEL program_start
+CREATEFRAME
+PUSHFRAME
+DEFVAR LF@number
+READ LF@number int
+JUMPIFEQ program_end int@0 LF@number
+PUSHS LF@number
+CALL factorial
+POPS LF@number
+POPFRAME
+WRITE TF@number
+WRITE string@\010
+
+JUMP program_start
+LABEL program_end
