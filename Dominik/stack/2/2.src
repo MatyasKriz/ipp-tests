@@ -1,0 +1,5 @@
+# POP prázdného stacku
+
+.ippcode18
+DEFVAR GF@asdf
+POPS GF@asdf

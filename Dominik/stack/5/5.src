@@ -1,0 +1,5 @@
+# PUSHS prázdné proměnné
+
+.ippcod18
+DEFVAR GF@asdf
+PUSHS GF@asdf
