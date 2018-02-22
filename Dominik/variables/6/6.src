@@ -1,0 +1,8 @@
+# Práce s proměnnou definovanou na TF
+
+.IPPcode18
+CREATEFRAME
+DEFVAR TF@promenna
+PUSHFRAME
+MOVE TF@promenna string@asdf
+WRITE TF@promenna

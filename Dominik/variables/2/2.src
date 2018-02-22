@@ -1,0 +1,6 @@
+# Jednoduchá práce s globální proměnnou
+
+.IPPcode18
+DEFVAR GF@promenna
+MOVE GF@promenna string@asdf
+WRITE GF@promenna

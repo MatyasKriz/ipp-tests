@@ -1,0 +1,7 @@
+# Práce s lokální proměnnou bez LF
+
+.IPPcode18
+CREATERAME
+DEFVAR LF@promenna
+MOVE LF@promenna string@asdf
+WRITE LF@promenna

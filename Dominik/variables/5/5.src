@@ -1,0 +1,4 @@
+# Definice proměnné na neexistujícím LF
+
+.IPPcode18
+DEFVAR TF@promenna
