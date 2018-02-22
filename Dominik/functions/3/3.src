@@ -1,0 +1,23 @@
+# Volání funkce s parametrem a návratovou hodnotou
+
+.ippcode18
+JUMP main
+LABEL funkce
+    CREATEFRAME
+    PUSHFRAME
+    DEFVAR LF@parametr
+    POPS LF@parametr
+    WRITE LF@parametr
+    PUSHS int@0
+    POPFRAME
+    RETURN
+
+LABEL main
+WRITE string@zavolame\032funkci\010
+PUSHS string@funkce\032\zavolana\010
+CALL funkce
+DEFVAR GF@return
+MOVE GF@return int@1
+POPS GF@return
+WRITE string@return\032code\032
+WRITE GF@return

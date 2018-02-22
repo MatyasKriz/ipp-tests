@@ -1,0 +1,11 @@
+# Volání funkce bez parametrů a návratové hodnoty
+
+.ippcode18
+JUMP main
+LABEL funkce
+    WRITE string@funkce\032\zavolana\010
+    RETURN
+
+LABEL main
+WRITE string@zavolame\032funkci\010
+CALL funkce
