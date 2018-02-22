@@ -1,7 +1,7 @@
 # Jednoduchá práce s lokální proměnnou
 
 .IPPcode18
-CREATERAME
+CREATEFRAME
 PUSHFRAME
 DEFVAR LF@promenna
 MOVE LF@promenna string@asdf
