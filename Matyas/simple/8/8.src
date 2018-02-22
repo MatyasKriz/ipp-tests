@@ -1,0 +1,16 @@
+.ippcode18
+DEFVAR GF@premenek
+DPRINT GF@premenek
+BREAK
+CREATEFRAME
+MOVE GF@premenek int@0000
+DPRINT GF@premenek
+BREAK
+PUSHFRAME
+MOVE GF@premenek string@
+DPRINT GF@premenek
+BREAK
+POPFRAME
+MOVE GF@premenek bool@false
+DPRINT GF@premenek
+BREAK
