@@ -1,0 +1,4 @@
+# String - chybné escape sekvence #2
+
+.ippcode18
+WRITE string@counter\a32nic\032neobsahuje

@@ -1,0 +1,4 @@
+# Správný string #2
+
+.ippcode18
+WRITE string@counter\032nic\032neobsahuje
