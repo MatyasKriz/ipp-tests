@@ -21,10 +21,11 @@
 2. POP prázdného stacku
 3. POP do nedefinované proměnné
 4. PUSH z nedefinované proměnné
-5. PUSH prázdné proměnné
+5. PUSH neinicializované proměnné
 6. PUSH this, POP that
 7. PUSH this, POP that #2
 8. PUSH this, POP that #3
+9. Jednoduchá práce s proměnnými na LF
 
 ### Functions
 1. Return bez CALL

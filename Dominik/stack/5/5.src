@@ -1,4 +1,4 @@
-# PUSHS prázdné proměnné
+# PUSHS neinicializované proměnné
 
 .ippcod18
 DEFVAR GF@asdf
