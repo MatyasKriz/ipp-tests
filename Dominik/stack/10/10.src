@@ -1,0 +1,5 @@
+# POP do nedefinované proměnné, rámec neexistuje
+
+.ippcode18
+PUSHS int@0
+POPS LF@asdf

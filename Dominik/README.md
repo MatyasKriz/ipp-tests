@@ -26,6 +26,7 @@
 7. PUSH this, POP that #2
 8. PUSH this, POP that #3
 9. Jednoduchá práce s proměnnými na LF
+10. POP do nedefinované proměnné (rámec neexistuje)
 
 ### Functions
 1. Return bez CALL
