@@ -1,4 +1,4 @@
-# Case sensitive test
+# Case sensitive test (won't be tested by IPP bois)
 
 .ippcode18
 DEFVAR GF@string
