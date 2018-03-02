@@ -14,7 +14,7 @@ LABEL funkce
 
 LABEL main
 WRITE string@zavolame\032funkci\010
-PUSHS string@funkce\032\zavolana\010
+PUSHS string@funkce\032zavolana\010
 CALL funkce
 DEFVAR GF@return
 MOVE GF@return int@1

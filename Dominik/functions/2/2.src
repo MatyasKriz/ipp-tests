@@ -3,7 +3,7 @@
 .ippcode18
 JUMP main
 LABEL funkce
-    WRITE string@funkce\032\zavolana\010
+    WRITE string@funkce\032zavolana\010
     RETURN
 
 LABEL main
