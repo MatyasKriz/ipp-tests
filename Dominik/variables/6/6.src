@@ -2,5 +2,5 @@
 CREATEFRAME
 DEFVAR TF@promenna
 PUSHFRAME
-MOVE TF@promenna string@asdf
-WRITE TF@promenna
+MOVE LF@promenna string@asdf
+WRITE LF@promenna
