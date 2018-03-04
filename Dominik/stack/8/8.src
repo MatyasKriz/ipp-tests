@@ -20,4 +20,5 @@ DEFVAR LF@_47_
 PUSHS int@0
 POPS LF@_47_
 DEFVAR LF@_barman
+PUSHS string@ale
 POPS LF@_barman
