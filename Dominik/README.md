@@ -50,6 +50,6 @@
 4. Identifikátor obsahuje čísla
 5. Identifikátor obsahuje nesprávné znaky
 6. Identifikátor jako opcode
-7. Case sensitive test (volitelné - nebude testováno)
+7. Case sensitive test
 8. Definice proměnné s prázdným jménem
 9. Redefinice proměnné (volitelné - nebude testováno)

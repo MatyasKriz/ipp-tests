@@ -1,3 +1,7 @@
 .ippcode18
 DEFVAR GF@string
+MOVE GF@string int@1
 DEFVAR GF@String
+MOVE GF@String int@2
+ADD GF@string GF@string GF@String
+WRITE GF@string
