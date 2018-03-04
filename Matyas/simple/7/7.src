@@ -38,7 +38,6 @@ CALL factorial
 POPS LF@number
 POPFRAME
 WRITE TF@number
-WRITE string@\010
 
 JUMP program_start
 LABEL program_end

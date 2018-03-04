@@ -61,17 +61,14 @@ PUSHFRAME
 
 POPFRAME
 WRITE TF@ipp-ifj-whats-the-difference
-WRITE string@\010
 POPFRAME
 WRITE TF@ipp-ifj-whats-the-difference
-WRITE string@\010
 POPFRAME
 WRITE TF@ipp-ifj-whats-the-difference
-WRITE string@\010
 POPFRAME
 WRITE TF@ipp-ifj-whats-the-difference
 
-WRITE string@\010\010
+WRITE string@
 CREATEFRAME
 DEFVAR TF@lamko1
 PUSHFRAME
@@ -93,20 +90,15 @@ DEFVAR TF@lamko5
 PUSHFRAME
 MOVE LF@lamko5 int@10000
 
-WRITE string@TOP_OF_THE_WORLD!\010
+WRITE string@TOP_OF_THE_WORLD!
 
 POPFRAME
 WRITE TF@lamko5
-WRITE string@\010
 POPFRAME
 WRITE TF@lamko4
-WRITE string@\010
 POPFRAME
 WRITE TF@lamko3
-WRITE string@\010
 POPFRAME
 WRITE TF@lamko2
-WRITE string@\010
 POPFRAME
 WRITE TF@lamko1
-WRITE string@\010

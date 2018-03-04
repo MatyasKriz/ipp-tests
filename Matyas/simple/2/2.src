@@ -20,7 +20,6 @@ GT TF@TF TF@counter int@100
 JUMPIFEQ end bool@true TF@TF
 
 WRITE TF@counter
-WRITE string@\010
 
 JUMP while
 LABEL end
