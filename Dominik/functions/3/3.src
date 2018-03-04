@@ -1,5 +1,3 @@
-# Volání funkce s parametrem a návratovou hodnotou
-
 .ippcode18
 JUMP main
 LABEL funkce

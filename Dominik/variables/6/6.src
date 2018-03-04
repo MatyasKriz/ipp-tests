@@ -1,5 +1,3 @@
-# Práce s proměnnou definovanou na TF
-
 .IPPcode18
 CREATEFRAME
 DEFVAR TF@promenna

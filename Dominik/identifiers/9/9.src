@@ -1,5 +1,3 @@
-# Redefinice proměnné (won't be tested by IPP bois)
-
 .ippcode18
 DEFVAR GF@ASDF
 DEFVAR GF@ASDF

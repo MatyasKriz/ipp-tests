@@ -1,5 +1,3 @@
-# Práce s lokální proměnnou bez LF
-
 .IPPcode18
 CREATEFRAME
 DEFVAR LF@promenna
