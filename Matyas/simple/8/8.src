@@ -12,5 +12,6 @@ DPRINT GF@premenek
 BREAK
 POPFRAME
 MOVE GF@premenek bool@false
+NOT GF@premenek GF@premenek
 DPRINT GF@premenek
 BREAK
