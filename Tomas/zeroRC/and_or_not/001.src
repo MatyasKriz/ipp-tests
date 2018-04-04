@@ -1,0 +1,27 @@
+.IPPcode18
+DEFVAR GF@result
+MOVE GF@result bool@true
+
+AND GF@result bool@true bool@true
+WRITE GF@result
+AND GF@result bool@false bool@false
+WRITE GF@result
+AND GF@result bool@true bool@false
+WRITE GF@result
+AND GF@result bool@false bool@true
+WRITE GF@result
+
+OR GF@result bool@true bool@true
+WRITE GF@result
+OR GF@result bool@false bool@false
+WRITE GF@result
+OR GF@result bool@true bool@false
+WRITE GF@result
+OR GF@result bool@false bool@true
+WRITE GF@result
+
+NOT GF@result bool@false
+WRITE GF@result
+
+NOT GF@result bool@true
+WRITE GF@result

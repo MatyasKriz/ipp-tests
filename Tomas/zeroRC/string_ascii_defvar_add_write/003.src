@@ -1,0 +1,5 @@
+.IPPcode18
+WRITE string@řetězec\032s\032lomítkem\032\092\032a\010novým\035řádkem
+DEFVAR GF@counter
+ADD GF@counter int@5 int@10
+WRITE GF@counter

@@ -1,0 +1,11 @@
+.IPPcode18
+DEFVAR GF@var
+DEFVAR GF@var2
+MOVE GF@var string@auto
+MOVE GF@var2 string@kek
+DEFVAR GF@cislo
+MOVE GF@cislo int@0
+SETCHAR GF@var int@3 string@ABCD
+SETCHAR GF@var GF@cislo string@SED
+SETCHAR GF@var int@1 GF@var2
+WRITE GF@var

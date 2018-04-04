@@ -1,0 +1,6 @@
+.IPPcode18
+DEFVAR GF@result
+INT2CHAR GF@result int@65
+WRITE GF@result
+INT2CHAR GF@result int@111
+WRITE GF@result

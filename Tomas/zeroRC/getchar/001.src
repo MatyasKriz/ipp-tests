@@ -1,0 +1,14 @@
+.IPPcode18
+DEFVAR GF@result
+DEFVAR GF@part2
+MOVE GF@part2 string@auto
+
+
+GETCHAR GF@result string@auto int@0
+WRITE GF@result
+GETCHAR GF@result GF@part2 int@1
+WRITE GF@result
+GETCHAR GF@result GF@part2 int@2
+WRITE GF@result
+GETCHAR GF@result string@auto int@3
+WRITE GF@result

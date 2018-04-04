@@ -1,0 +1,11 @@
+.IPPcode18
+DEFVAR GF@ouje
+DEFVAR GF@result
+
+MOVE GF@ouje string@ahoj
+MOVE GF@result string@test
+
+GETCHAR GF@result string@ahoj int@42
+
+
+

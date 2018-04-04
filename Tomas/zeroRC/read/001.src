@@ -1,0 +1,20 @@
+.IPPcode18
+DEFVAR GF@temp
+
+READ GF@temp string
+WRITE GF@temp
+
+READ GF@temp int
+WRITE GF@temp
+READ GF@temp int
+WRITE GF@temp
+
+
+READ GF@temp bool
+WRITE GF@temp
+READ GF@temp bool
+WRITE GF@temp
+READ GF@temp bool
+WRITE GF@temp
+READ GF@temp bool
+WRITE GF@temp

@@ -1,0 +1,43 @@
+.IPPcode18
+DEFVAR GF@var1
+DEFVAR GF@var2
+
+MOVE GF@var1 string@auto
+MOVE GF@var2 string@auto
+
+JUMP test
+WRITE string@eeee
+LABEL test
+
+JUMPIFNEQ help GF@var1 string@auto
+WRITE string@ouje1
+
+JUMPIFNEQ help GF@var1 string@AUTO
+
+WRITE string@eeee
+LABEL help
+WRITE string@ouje2
+
+MOVE GF@var1 int@4
+MOVE GF@var2 int@4
+
+JUMPIFNEQ help2 int@4 GF@var2
+WRITE string@ouje3
+
+JUMPIFNEQ help2 GF@var2 int@4444
+
+WRITE string@eeee
+LABEL help2
+WRITE string@ouje4
+
+MOVE GF@var1 bool@false
+MOVE GF@var2 bool@true
+
+JUMPIFNEQ help3 bool@false GF@var1
+WRITE string@ouje5
+
+JUMPIFNEQ help3 GF@var2 bool@false
+
+WRITE string@eeee
+LABEL help3
+WRITE string@ouje6

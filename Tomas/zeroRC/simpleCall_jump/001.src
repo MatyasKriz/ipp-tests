@@ -1,0 +1,10 @@
+.IPPcode18
+CALL pepa
+WRITE int@1
+JUMP karel
+
+
+LABEL pepa
+WRITE string@pepaJeBuh
+RETURN
+LABEL karel

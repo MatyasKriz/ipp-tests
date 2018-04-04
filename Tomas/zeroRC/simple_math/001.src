@@ -1,0 +1,16 @@
+.IPPcode18
+DEFVAR GF@ouje
+DEFVAR GF@heh
+DEFVAR GF@result
+MOVE GF@ouje int@30
+MOVE GF@heh int@5
+ADD GF@result GF@ouje GF@heh
+WRITE GF@result
+SUB GF@result GF@ouje GF@heh
+WRITE GF@result
+MUL GF@result GF@ouje GF@heh
+WRITE GF@result
+IDIV GF@result GF@ouje GF@heh
+WRITE GF@result
+
+

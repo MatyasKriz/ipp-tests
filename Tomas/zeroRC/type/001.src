@@ -1,0 +1,28 @@
+.IPPcode18
+DEFVAR GF@int
+DEFVAR GF@string
+DEFVAR GF@bool
+DEFVAR GF@uninicialised
+DEFVAR GF@result
+
+
+MOVE GF@int int@5
+MOVE GF@string string@auto
+MOVE GF@bool bool@false
+
+
+TYPE GF@result GF@int
+WRITE GF@result
+TYPE GF@result int@66
+WRITE GF@result
+TYPE GF@result GF@string
+WRITE GF@result
+TYPE GF@result string@bbcd
+WRITE GF@result
+TYPE GF@result GF@bool
+WRITE GF@result
+TYPE GF@result GF@uninicialised
+WRITE GF@result
+TYPE GF@result bool@true
+WRITE GF@result
+

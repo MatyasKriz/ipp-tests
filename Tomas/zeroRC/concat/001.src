@@ -1,0 +1,9 @@
+.IPPcode18
+DEFVAR GF@result
+DEFVAR GF@part
+DEFVAR GF@part2
+MOVE GF@part string@franta\032
+MOVE GF@part2 string@auto
+CONCAT GF@result GF@part string@ma\032
+CONCAT GF@result GF@result GF@part2
+WRITE GF@result

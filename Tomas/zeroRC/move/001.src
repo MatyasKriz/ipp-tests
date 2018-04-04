@@ -1,0 +1,4 @@
+.IPPcode18
+DEFVAR GF@promenna
+MOVE GF@promenna int@55
+WRITE GF@promenna

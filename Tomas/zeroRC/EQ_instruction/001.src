@@ -1,0 +1,30 @@
+.IPPcode18
+DEFVAR GF@ouje
+DEFVAR GF@heh
+DEFVAR GF@result
+
+
+MOVE GF@ouje int@30
+MOVE GF@heh int@5
+
+EQ GF@result GF@heh GF@ouje
+WRITE GF@result
+EQ GF@result GF@ouje GF@heh
+WRITE GF@result
+EQ GF@result bool@false bool@true
+WRITE GF@result
+EQ GF@result string@fh string@zzzzzzzzzzzz
+WRITE GF@result
+
+
+EQ GF@result bool@true bool@true
+WRITE GF@result
+EQ GF@result bool@false bool@false
+WRITE GF@result
+EQ GF@result int@111 int@111
+WRITE GF@result
+EQ GF@result string@hello string@hello
+WRITE GF@result
+
+
+

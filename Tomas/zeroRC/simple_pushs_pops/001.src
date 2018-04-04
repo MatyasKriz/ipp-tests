@@ -1,0 +1,10 @@
+.IPPcode18
+DEFVAR GF@python
+MOVE GF@python bool@true
+PUSHS GF@python
+PUSHS int@42
+DEFVAR GF@temp
+POPS GF@temp
+WRITE GF@temp
+POPS GF@temp
+WRITE GF@temp

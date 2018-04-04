@@ -1,0 +1,5 @@
+.IPPcode18
+CREATEFRAME
+DEFVAR TF@promenna
+MOVE TF@promenna int@55
+WRITE TF@promenna

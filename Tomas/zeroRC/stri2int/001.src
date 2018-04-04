@@ -1,0 +1,6 @@
+.IPPcode18
+DEFVAR GF@result
+STRI2INT GF@result string@oujC int@0
+WRITE GF@result
+STRI2INT GF@result string@oujC int@3
+WRITE GF@result
